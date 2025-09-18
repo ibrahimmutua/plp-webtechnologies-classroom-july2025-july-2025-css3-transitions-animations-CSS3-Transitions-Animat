@@ -1,0 +1,55 @@
+/* ==========================
+   General Styles
+========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f0f8ff;
+}
+
+h1, h2 {
+  color: darkblue;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* ==========================
+   Transition Example
+========================== */
+#btnTransition {
+  background-color: lightblue;
+  border: none;
+  transition: background-color 0.5s, transform 0.3s;
+}
+
+#btnTransition:hover {
+  background-color: darkblue;
+  color: white;
+  transform: scale(1.2);
+}
+
+/* ==========================
+   Keyframe Animation
+========================== */
+#animateBox {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 10px;
+}
+
+/* Define keyframes */
+@keyframes moveAndRotate {
+  0% { transform: translateX(0) rotate(0deg); }
+  50% { transform: translateX(150px) rotate(180deg); }
+  100% { transform: translateX(0) rotate(360deg); }
+}
+
+/* Class to trigger animation */
+.animate {
+  animation: moveAndRotate 3s ease-in-out;
+}
